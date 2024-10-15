@@ -1,7 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 
 h1{
-  font-family: ;
+  font-family: "Qwitcher Gyrpen";
+}
+
+.navbar{
+  width: 100%;
+  height:30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+/* this works to keep nav bar from having dots*/
+.navbar li{
+  cursor:pointer;
+  list-style:none;
+}
+.navbar li :hover {
+  opacity: 0.7;
+  text-decoration: underline;
 }
