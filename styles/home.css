@@ -13,6 +13,7 @@
   text-rendering:geometricPrecision;
   border: 2px dashed #000; 
   max-width: 500px;
+  font-size:x-large;
   
 
 }
@@ -25,7 +26,7 @@
 }
 
 
-.navbar{
+.navbar ul{
   width: 50%;
   height:30px;
   display: flex;
@@ -40,10 +41,9 @@
 }
 
 /* this works to keep nav bar from having dots*/
-.navbar li{
+.navbar ul li{
   cursor:pointer;
   list-style:none;
-
   
 }
 .navbar li :hover {
@@ -54,11 +54,12 @@
 
 .gallery{
   border:solid;
-  padding:2em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
+
+  margin: 4rem;
   
 
 }
@@ -67,15 +68,25 @@
 
 .imageContainer{
   margin:1.3em;
-  border:solid;
   align-self: center;
-  
+  text-align: center;
 
 }
 
 img{
   width:400px;
-  height:400px;
   padding: 0 20px;
   object-fit: contain;
+  border-radius: 10px;
+  
+}
+
+.text{
+  text-align: start;
+}
+h4{
+  color:rgb(163, 163, 159);
+}
+p{
+  color:grey;
 }
