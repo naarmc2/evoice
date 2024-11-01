@@ -1,88 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Handlee&family=LXGW+WenKai+TC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
-
-*{
-  font-family: "LXGW WenKai TC";
-}
-.top{
-  font-style: normal;
+body{
+  background-color: #fff;
 }
 
 .box{
-  margin-top:3em;
-  margin-left: 35vw;
+  background-color: #fff;
+  margin-top:2.5em;
+  margin-left: 30vw;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 5px;
   text-rendering:geometricPrecision;
   border: 2px dashed #000; 
   max-width: 500px;
-  font-size:x-large;
+  padding: 0 100px;
+
+  font-size:xx-large;
   
 
 }
  .title{
-  font-family: "Qwitcher Grypen";
+  font-family: "LXGW WenKai TC";
   font-weight: lighter;
-  font-size:70px;
+  font-size:90px;
   letter-spacing: 0.2rem;
+  font-weight:bold
   
 }
 
 .underTitle{
   color:gray;
-}
-
-
-.navbar ul{
-  width: 50%;
-  height:30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: center;
-  margin-left: 30vw;
-  gap: 5em;
-  margin-top:40px;
-  font-size:16px;
-
-}
-
-/* this works to keep nav bar from having dots*/
-.navbar ul li{
-  cursor:pointer;
-  list-style:none;
-  
-}
-.navbar li :hover {
-  opacity: 0.7;
-  text-decoration: underline;
+  font-weight: lighter;
 }
 
 
 .gallery{
   border:solid;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
-
   margin: 5rem;
-
-
-
-  
-
 }
 
+.gallery .imageContainer h4{
+  text-wrap:balance;
+
+
+}
 /* starting the articles' galleries*/
 
-.imageContainer{
-  margin:2em 0.5em;
-  margin-left:4em;
+.gallery .imageContainer{
+  margin:2em 2.2em;
   align-self: center;
   text-align: center;
 }
 
 img{
+  border:solid;
   width:350px;
   object-fit: contain;
   border-radius: 5px;
