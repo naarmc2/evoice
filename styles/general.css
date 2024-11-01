@@ -3,6 +3,12 @@
   font-family:sans-serif;
 }
 
+:root {
+  --spenceGold: #dbb132;
+  --spenceBlue: #244e91;
+}
+
+
 /* NAVBAR*/
 .navbar ul{
   width: 45%;
@@ -11,7 +17,7 @@
   flex-direction: row;
   align-items: center;
   align-self: center;
-  margin-left: 32vw;
+  margin-left: 26vw;
   gap: 5em;
   margin-top:40px;
   font-size:16px;
