@@ -1,3 +1,13 @@
+.content p{
+  text-align: center;
+}
+
+.content p a{
+  color:var(--spenceBlue)
+}
+
+
+
 
 .imageBorder {
   border: 8px double var(--spenceBlue) ;
@@ -12,7 +22,9 @@
   width: 50%;
 }
 
-
+.teamDescription{
+  padding: 20px;
+}
 .teamDescription p{
   text-align: center;
   font-size:20px;
@@ -27,91 +39,3 @@
 
   list-style:none;
 }
-
-
-/*FOOTER*/
-footer{
-  position: relative;
-  width: 100%;
-  height:auto;
-  margin-top:60px;
-  padding-top: 80px;
-  background-color: var(--deepBlue);
-  color:var(--spenceGold)
-}
-.container{
-  width:100%;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 12px;
-}
-
-.wrapper{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.wrapper .footer-widget{
-  width: calc(20%-30px);
-  margin: 0 15px 50px;
-  padding: 0 12px;
-
-}
-
-.wrapper .footer-widget:nth-child(1){
-  width:calc(30% - 50px);
-  margin-right: 15px;
-}
-
-.wrapper .footer-widget .logo{
-  margin-bottom: 30px;
-  vertical-align: middle;
-}
-
-
-.wrapper .footer-widget p{
-  margin-bottom: 30px; 
-  font-size: 16px; 
-  line-height:24px;
-}
-
-.wrapper .footer-widget .socials{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.wrapper .footer-widget .socials li{
-  list-style: none;
-}
-
-
-.wrapper .footer-widget .socials li a{
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  color:#eeeeee;
-  background-color: var(--spenceBlue);
-  border-radius: 50%;
-  font-size: 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease out;
-}
-
-.wrapper .footer-widget .socials li a:hover{
-  background-color: var(--lightBlue);
-}
-
-.wrapper .footer-widget h6{
-  color:var(--spenceBlue);
-}
-.footer-widget img{
-  height:100px;
-
-}
-
