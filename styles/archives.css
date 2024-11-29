@@ -1,0 +1,64 @@
+body{
+  background-color: #fff;
+}
+
+
+
+.navbar h1{ 
+  text-decoration:overline;
+  font-size: 20px;
+  color:var(--deepGold);
+  font-size:40px;
+  font-family:"Sacramento";
+ }
+
+ .navbar span{
+  color:var(--deepGold);
+  font-size: 40px;
+ }
+ 
+.gallery{
+  border:solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+}
+
+.gallery .imageContainer h4{
+  text-wrap:balance;
+}
+
+
+
+/* starting the articles' galleries*/
+
+.gallery .imageContainer{
+  background-color: var(--lightBlue);
+  margin:1em 2em;
+  padding:2px;
+  border-radius: 10px;
+  align-self: center;
+  text-align: center;
+}
+
+img{
+  border:solid;
+  width:350px;
+  object-fit: contain;
+  border-radius: 5px;
+  
+}
+
+.text{
+  text-align: start;
+  color:var(--lightGold)
+}
+h4{
+  color:rgb(163, 163, 159);
+}
+p{
+  color:grey;
+}
