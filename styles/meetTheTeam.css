@@ -6,11 +6,8 @@
   color:var(--spenceBlue)
 }
 
-
-
-
 .imageBorder {
-  border: 8px double var(--spenceBlue) ;
+  border: 4px solid var(--deepBlue) ;
   border-radius: 15px;
   margin:2em;
 }
@@ -22,8 +19,13 @@
   width: 50%;
 }
 
-.teamDescription{
-  padding: 20px;
+hr{
+  min-width: 250px;
+  width:600px;
+}
+
+.teamDescription ul{
+  padding:20px;
 }
 .teamDescription p{
   text-align: center;
