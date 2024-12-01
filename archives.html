@@ -1,108 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--STYLESHEETS-->
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/archives.css">
 
-  <!--STYLESHEETS-->
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/meetTheTeam.css">
 
   <!--FONT AWESOME CDN LINK-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!--FAVICON-->
-  <link rel = "icon" type = "image/png" href = "images/speakerIcon.svg">
+  <link rel="icon" type="image/png" href="images/icon.png" />
 
   <title>eVoice</title>
-  
+
   <!--BOOKMARK ICON for ARCHIVES NAVBAR-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=bookmark" />
-  
-  
-  
-  <body>
-    <header class="navigation"> 
-        <nav class="navbar">
-          <div class="titleCenter"> 
-            <span class="material-symbols-outlined"> bookmark</span>
-            &nbsp&nbsp&nbsp
-            <h1 class="title">         
-               eARCHIVES  
-            </h1>
-            &nbsp&nbsp&nbsp
-            <span class="material-symbols-outlined"> bookmark</span>
-          </div>
-          <ul class="links" >
-            <li><a href="recentArticles.html">Recent Articles</a></li> 
-            <li><a href="meetTheTeam.html">Meet the Team</a></li>
-            <li><a href="archives.html">Archives</a></li>
-            <li><a  href="submissions.html"> Submissions</a></li>      
-          </ul>         
-        </nav>
-    </header>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=bookmark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 
-    <main>
-          <div class="gallery">
-                    <div class="imageContainer">
-                      <img src="images/412.jpg" alt="412 Athletics Facility">
-                      <div class="text">
-                        <h3> Out of Milla's Morning Mind</h3>
-                        <h4> 10/15/2024</h4>
-                        <p> Type a short description. Totally not filler content to <br> see what a full description wouold look like</p>
-                      </div>
 
-                    </div>
+<body>
+  <header class="navigation">
+    <nav class="navbar">
+      <div class="titleCenter">
+        <h1 class="title"><a href="index.html">eVOICE</a></h1>
+      </div>
+      <ul class="links">
+        <li><a href="recentArticles.html">Recent Articles</a></li>
+        <li><a href="meetTheTeam.html">Meet the Team</a></li>
+        <li><a href="archives.html">Archives</a></li>
+        <li><a href="submissions.html"> Submissions</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                    <div class="imageContainer">
-                      <img src="images/lectureHall.jpg" alt="Lecture Hall"> 
-                      <div class="text">
-                        <h3> Community Time in the Lecture Hall?!</h3>
-                        <h4> 10/15/2024</h4>
-                        <p> Type a short description. Totally not filler content to <br> see what a full description wouold look like</p>
-                      </div>
-                    </div>
-                    <div class="imageContainer">
-                      <img src="images/drawingRoom.jpeg" alt="Drawing Room">
-                      <div class="text">
-                        <h3> Welcome to Highschool 9th Graders!</h3>
-                        <h4> 10/15/2024</h4>
-                        <p> Type a short description. Totally not filler content to <br> see what a full description wouold look like</p>
-                      </div>
 
-                    </div>
-                    <div class="imageContainer">
-                      <img src="images/rising9th.jpeg" alt="Group of Ninth Graders">
-                      <div class="text">
-                        <h3> Welcome to Highschool 9th Graders!</h3>
-                        <h4> 10/15/2024</h4>
-                        <p> Type a short description. Totally not filler content to <br> see what a full description wouold look like</p>
-                      </div>
+  <main>
+    <div class="gallery">
+      <div class="titleYear">
+        <button id="prev-slide" class="slide-button material-symbols-outlined"> chevron_left</button>
+        <p> 2023-2024</p>
+        <button id="next-slide" class="slide-button material-symbols-outlined"> chevron_right</button>
+      </div>
 
-                    </div>
-                    <div class="imageContainer">
-                      <img src="images/spenceClub.jpeg" alt="Club Photo">
-                      <div class="text">
-                        <h3> Smile for Yearbook guys!!</h3>
-                        <h4> 10/15/2024</h4>
-                        <p> Type a short description. Totally not filler content to <br> see what a full description wouold look like</p>
-                      </div>
+      <div class="articleContainer">
+        <img src="images/sonnyAngels.jpg" alt="sonny Angels">
+        <hr>
+        <div class="text">
+          <h3> Sonny Angels</h3>
+          <h4> by Jules Bason '25</h4>
+          <p> The rise to popularity of Sonny Angels in the Spence community.</p>
+        </div>
 
-                    </div>
-                    <div class="imageContainer">
-                      <img src="images/redDoors.jpg" alt="Entrance of Spence">
-                      <div class="text">
-                        <h3> Not for school but for life we learn</h3>
-                        <h4> 10/15/2024</h4>
-                        <p> Type a short description. Totally not filler content to <br> see what a full description wouold look like</p>
-                      </div>
-                    </div>
-          </div>
-    </main>
+      </div>
+
+      <div class="articleContainer">
+        <img src="images/openAi.jpeg" alt="openAi">
+        <hr>
+        <div class="text">
+          <h3> The OpenAi Fiasco</h3>
+          <h4> by Cindy Wang '26</h4>
+          <p> Contradicting stances on how AI should be used raises questions surrounding its future.
+          </p>
+        </div>
+      </div>
+      <div class="articleContainer">
+        <img src="images/music.jpg" alt="music illustration">
+        <hr>
+        <div class="text">
+          <h3> How Two Friends Found Common Ground in a Playlist</h3>
+          <h4> By Klarke Johnson and Arden Glick</h4>
+          <p> Music usually tends to unite people, yet here is a case where people where almost divided
+          </p>
+        </div>
+
+      </div>
+      <div class="articleContainer">
+        <img src="images/waterBottles.jpg" alt="water bottles">
+        <hr>
+        <div class="text">
+          <h3> Bottles in Time: An in Depth History of Water Bottles </h3>
+          <h4>By Cindy Wang '26</h4>
+          <p> Personal water bottles seem to have taken on a trend of changing with the seasons. Find out what one of our writers has to say about this.
+          </p>
+        </div>
+
+      </div>
+      <div class="articleContainer">
+        <img src="images/books.jpg" alt="books">
+        <hr>
+        <div class="text">
+          <h3> Five Books for 2024, and Why </h3>
+          <h4> By Jules Bason '25</h4>
+          <p> Book Recommendations by one of our writers.</p>
+        </div>
+
+      </div>
+      <div class="articleContainer">
+        <img src="images/redDoors.jpg" alt="Entrance of Spence">
+        <hr>
+        <div class="text">
+          <h3> Not for school but for life we learn</h3>
+          <h4> 10/15/2024</h4>
+          <p> Type a short description. Totally not filler content to <br> see what a full description wouold look like
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
   <!--FOOTER-->
@@ -138,7 +159,7 @@
 
           <ul class="socials_header">
             <li>
-              <a href="https://www.instagram.com/spence.evoice/" class="socials_name"  target="_blank">Socials</a>
+              <a href="https://www.instagram.com/spence.evoice/" class="socials_name" target="_blank">Socials</a>
             </li>
             <li>
               <a href="https://www.instagram.com/spence.evoice/" class="socials_icon" target="_blank"><i
@@ -173,4 +194,5 @@
   </footer>
 
 </body>
+
 </html>
