@@ -9,6 +9,8 @@
   align-self: center;
   margin: 0px 30px;
   margin-bottom:50px;
+  height: 1200px; /* Adjust the height as needed */
+  overflow-y: scroll;
 }
 
 .gallery .articleContainer{
