@@ -1,12 +1,17 @@
 html{
   scroll-behavior: smooth; 
 }
+
+/* not as functionally as it could be
+issue when browser is expanded smaller
+*/
 .gallery{
   border: solid;
-  border-radius: 10px;  
-  margin: 0px 50px;
+  border-radius: 10px; 
+  align-self: center;
+  margin: 0px 30px;
   margin-bottom:50px;
-  display:flex;
+  display: flex;
   overflow-x: hidden;
 }
 
@@ -19,7 +24,7 @@ html{
   justify-content: center;
   align-self: center;
   margin-bottom:50px;
-  width:1380px;
+  width:1408px;
   height: 1200px; /* Adjust the height as needed */
   overflow-y: scroll;
 }
