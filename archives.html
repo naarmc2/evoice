@@ -8,6 +8,8 @@
   <!--STYLESHEETS-->
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/archives.css">
+  <link rel="stylesheet" href="dynamics/general.js" />
+  <link rel="stylesheet" href="dynamics/archives.js">
 
 
   <!--FONT AWESOME CDN LINK-->
@@ -45,19 +47,20 @@
         <li><a href="recentArticles.html">Recent Articles</a></li>
         <li><a href="meetTheTeam.html">Meet the Team</a></li>
         <li><a href="archives.html">Archives</a></li>
-        <li><a href="submissions.html"> Submissions</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeNHThld42QO_rjhhcxhpmU0W5N9Iputd-FrWR7qRBmpRsAog/viewform?usp=sf_link" target="_blank"> Submissions</a></li>
       </ul>
     </nav>
   </header>
 
 
   <main>
+    <div class="gallery">
     <div id="2023">
-      <div class="gallery">
+      <div class="section">
         <div class="titleYear">
-          <button id="prev-slide" class="slide-button material-symbols-outlined"> chevron_left</button>
-          <p> 2023-2024</p>
-          <button id="next-slide" class="slide-button material-symbols-outlined"> chevron_right</button>
+          <button class="slide-button material-symbols-outlined"> chevron_left</button>
+          <p id="articleYear"> 2023-2024</p>
+          <button id="nextBtn"class="slide-button material-symbols-outlined"> chevron_right</button>
         </div>
         <div class="articleContainer">
           <img src="images/sonnyAngels.jpg" alt="sonny Angels">
@@ -151,110 +154,89 @@
 
 
     <div id="2022">
-      <div class="gallery">
+      <div class="section">
         <div class="titleYear">
-          <button id="prev-slide" class="slide-button material-symbols-outlined"> chevron_left</button>
-          <p> 2023-2024</p>
-          <button id="next-slide" class="slide-button material-symbols-outlined"> chevron_right</button>
+          <button id="backBtn" class="slide-button material-symbols-outlined"> chevron_left</button>
+          <p> 2022-2023</p>
+          <button class="slide-button material-symbols-outlined"> chevron_right</button>
         </div>
         <div class="articleContainer">
-          <img src="images/sonnyAngels.jpg" alt="sonny Angels">
+          <img src="images/TooGoodToGo.jpg" alt="the Too Good To Go brand logo">
           <hr>
           <div class="text">
-            <h3> Sonny Angels</h3>
-            <h4> by Jules Bason '25</h4>
-            <p> The rise to popularity of Sonny Angels in the Spence community</p>
-          </div>
-        </div>
-        <div class="articleContainer">
-          <img src="images/openAi.jpeg" alt="openAi">
-          <hr>
-          <div class="text">
-            <h3> The OpenAi Fiasco</h3>
+            <h3> App Review: Too Good to Go</h3>
             <h4> by Cindy Wang '26</h4>
-            <p> Contradicting stances on how AI should be used raises questions surrounding its future
+            <p> Countering food overproduction</p>
+          </div>
+        </div>
+        <div class="articleContainer">
+          <img src="images/cutePets.png" alt="cute poodle, corgie, and kittens">
+          <hr>
+          <div class="text">
+            <h3> How Pets Teach us to Love</h3>
+            <h4> by Jay Ocasio '25</h4>
+            <p> <i> "Until one has loved an animal a part of one's soul remains unawakened."</i></p>
+          </div>
+        </div>
+        <div class="articleContainer">
+          <img src="images/spotifyWrapped.webp" alt="image of words 2023 Wrapped">
+          <hr>
+          <div class="text">
+            <h3> Et Tu, Spotify?</h3>
+            <h4> By Avery Chu '25</h4>
+            <p> Everybody's got their personal taste in music</p>
+          </div>
+        </div>
+        <div class="articleContainer">
+          <img src="images/shower.webp" alt="a bathroom shower">
+          <hr>
+          <div class="text">
+            <h3> The Spower of a Shower </h3>
+            <h4> By Annika Melwani '25</h4>
+            <p> A comparison of your very own Spence students' showering routines!</p>
+          </div>
+        </div>
+        <div class="articleContainer">
+          <img src="images/romanceFlicks.avif" alt="popular romance movies">
+          <hr>
+          <div class="text">
+            <h3> Out of Milla's Morning Mind: Valentine's Day Flicks </h3>
+            <h4>By Milla Duca '25</h4>
+            <p> Engage with the celebration of romance through literary media  </p>
+          </div>
+        </div>
+        <div class="articleContainer">
+          <img src="images/springBreakBooks.jpg" alt="open book with tulips sprawled across the right-side page">
+          <hr>
+          <div class="text">
+            <h3> Spring Break Book Ideas</h3>
+            <h4> By Milla Duca '25</h4>
+            <p> <i>"Reading is to the mind what exercise is to the body"</i> </p>
+          </div>
+        </div>
+        <div class="articleContainer">
+          <img src="images/spenceBathroom.png" alt="outside of a Spence bathroom">
+          <hr>
+          <div class="text">
+            <h3> Get to Know the Spathrooms: Part One</h3>
+            <h4> By  Annika Melwani '25</h4>
+            <p> Here's the scoop on the greatest qualities of some of Spence's laboratories
             </p>
           </div>
         </div>
         <div class="articleContainer">
-          <img src="images/music.jpg" alt="music illustration">
+          <img src="images/artwork.png" alt="photo by Milla Duca">
           <hr>
           <div class="text">
-            <h3> How Two Friends Found Common Ground in a Playlist</h3>
-            <h4> By Klarke Johnson and Arden Glick</h4>
-            <p> Music usually tends to unite people, yet here is a case where people where almost divided
-            </p>
-          </div>
-        </div>
-        <div class="articleContainer">
-          <img src="images/books.avif" alt="books">
-          <hr>
-          <div class="text">
-            <h3> Five Books for 2024, and Why </h3>
-            <h4> By Jules Bason '25</h4>
-            <p> Book Recommendations by one of our writers</p>
-          </div>
-        </div>
-        <div class="articleContainer">
-          <img src="images/waterBottles.jpg" alt="water bottles">
-          <hr>
-          <div class="text">
-            <h3> Bottles in Time: An in Depth History of Water Bottles </h3>
-            <h4>By Cindy Wang '26</h4>
-            <p> Personal water bottles seem to have taken on a trend of changing with the seasons. Find out what one of our writers has to say about this
-            </p>
-          </div>
-        </div>
-        <div class="articleContainer">
-          <img src="images/academicSuccess.avif" alt="trophies and books">
-          <hr>
-          <div class="text">
-            <h3> The Final Stretch: Transitioning from the March Slump to Academic Success</h3>
-            <h4> By Klarke Johnson '26</h4>
-            <p> Achieve your inner academic weapon with some life-changing tips
-            </p>
-          </div>
-        </div>
-        <div class="articleContainer">
-          <img src="images/solarEclipse.png" alt="solar eclipse">
-          <hr>
-          <div class="text">
-            <h3> Solar Eclipse in NYC</h3>
-            <h4> By Cindy Wang '26</h4>
-            <p> The phenomenon you should not miss
-            </p>
-          </div>
-        </div>
-        <div class="articleContainer">
-          <img src="images/seafood.jpg" alt="Entrance of Spence">
-          <hr>
-          <div class="text">
-            <h3>Out of Milla's Morning Mind: Quest for Seafood</h3>
-            <h4> By Klarke Johnson '26</h4>
-            <p> Yummy seafood spots on the Upper East Side
-            </p>
-          </div>
-        </div>
-        <div class="articleContainer">
-          <img src="images/perfectCandle.jpg" alt="Entrance of Spence">
-          <hr>
-          <div class="text">
-            <h3> Arden's Adventures: Searching for the Perfect Candle</h3>
-            <h4>By Arden Duca '25</h4>
-            <p> Discover your inner zen </p>
+            <h3>Out of Milla's Morning Mind: Exciting Exhibits in the Art World</h3>
+            <h4> By Milla Duca '25</h4>
+            <p> <i>"Art is the window into the soul"</i> </p>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
+    </div>
   </main>
-
 
   <!--FOOTER-->
 
@@ -323,6 +305,25 @@
     </div>
   </footer>
 
+<script>
+    let  scrollContainer = document.querySelector(".gallery")
+    let backBtn = document.getElementById("backBtn")
+    let nextBtn = document.getElementById("nextBtn")
+    
+    
+    scrollContainer.addEventListener("wheel", (evt) =>{
+      scrollContainer.scrollLeft += evt.deltaX;
+    });
+    
+    nextBtn.addEventListener("click", ()=> {
+      scrollContainer.scrollLeft += 1500; 
+      document.getElementById("articleYear").innerHTML = "Heading was changed!"
+    });
+    
+    backBtn.addEventListener("click", ()=> {
+      scrollContainer.scrollLeft -= 1500; 
+    });
+</script>
 </body>
 
 </html>
