@@ -1,11 +1,13 @@
+html{
+  scroll-behavior: smooth; 
+}
 .gallery{
   border: solid;
   border-radius: 10px;  
   margin: 0px 30px;
   margin-bottom:50px;
-  display: flex;
-  overflow-x:hidden;
-  width:1400px;
+  display:flex;
+  overflow-x: hidden;
 }
 
 .section{
@@ -16,9 +18,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  margin: 0px 30px;
   margin-bottom:50px;
-  width:1400px;
+  width:1408px;
   height: 1200px; /* Adjust the height as needed */
   overflow-y: scroll;
 }

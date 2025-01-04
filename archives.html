@@ -8,8 +8,11 @@
   <!--STYLESHEETS-->
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/archives.css">
-  <link rel="stylesheet" href="dynamics/general.js" />
-  <link rel="stylesheet" href="dynamics/archives.js">
+
+  <!-- ISNT WORKING RN
+  <script src="js/general.js"></script>
+  <script src="js/archives.js"></script>
+  -->
 
 
   <!--FONT AWESOME CDN LINK-->
@@ -55,11 +58,11 @@
 
   <main>
     <div class="gallery">
-    <div id="2023">
+    <div>
       <div class="section">
         <div class="titleYear">
           <button class="slide-button material-symbols-outlined"> chevron_left</button>
-          <p id="articleYear"> 2023-2024</p>
+          <p id="2023"> 2023-2024</p>
           <button id="nextBtn"class="slide-button material-symbols-outlined"> chevron_right</button>
         </div>
         <div class="articleContainer">
@@ -157,7 +160,7 @@
       <div class="section">
         <div class="titleYear">
           <button id="backBtn" class="slide-button material-symbols-outlined"> chevron_left</button>
-          <p> 2022-2023</p>
+          <p > 2022-2023</p>
           <button class="slide-button material-symbols-outlined"> chevron_right</button>
         </div>
         <div class="articleContainer">
@@ -257,9 +260,9 @@
             <li>
               <a href="recentArticles.html" class="articles_name">Articles</a>
             </li>
-            <li><a href="#">2024-2025</a></li>
-            <li><a href="#">2023-2024</a></li>
-            <li><a href="#">2022-2023</a></li>
+            <li><a href="#2024">2024-2025</a></li>
+            <li><a href="#2023">2023-2024</a></li>
+            <li><a href="#2022">2022-2023</a></li>
           </ul>
           <ul class="periodicals_header">
             <li>
@@ -285,7 +288,7 @@
                 <ul>
                   <li>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNHThld42QO_rjhhcxhpmU0W5N9Iputd-FrWR7qRBmpRsAog/viewform?usp=sf_link"
-                      target="_blank"><img src="images/submit3.png" alt="submit icon" /></a>
+                      target="_blank"><img id="submitBtn" src="images/submit3.png" alt="submit icon" /></a>
                   </li>
                 </ul>
           </div>
@@ -311,18 +314,23 @@
     let nextBtn = document.getElementById("nextBtn")
     
     
-    scrollContainer.addEventListener("wheel", (evt) =>{
-      scrollContainer.scrollLeft += evt.deltaX;
-    });
-    
     nextBtn.addEventListener("click", ()=> {
       scrollContainer.scrollLeft += 1500; 
-      document.getElementById("articleYear").innerHTML = "Heading was changed!"
     });
     
     backBtn.addEventListener("click", ()=> {
       scrollContainer.scrollLeft -= 1500; 
     });
+
+
+  const submitImg = document.getElementById("submitBtn");
+  submitImg.addEventListener("mouseover", function() {
+    submitImg.src = "images/submit4.png"; // Change image source on hover
+  });
+  submitImg.addEventListener("mouseout", function() {
+    submitImg.src = "images/submit3.png"; // Restore original image on mouseout
+  });
+
 </script>
 </body>
 
