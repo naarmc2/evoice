@@ -1,4 +1,4 @@
 # Evoice
 a club website 
 
-Evoice is the school's online newspaper
+Evoice is a school's online newspaper
