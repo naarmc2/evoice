@@ -1,0 +1,22 @@
+.firstBar {
+  border:solid;
+  padding: 50px;
+  border-radius: 10px;
+  
+}
+
+.firstBar .periodical{
+  width: 50%;
+  padding: 10px;
+  border:solid;
+
+  height:300px; 
+}
+.firstBar .left {
+  float: left;
+}
+
+.firstBar .right {
+  float: right;
+
+}
