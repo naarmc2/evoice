@@ -1,0 +1,65 @@
+.articleContent{
+  width:80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding:30px;
+  border: solid 1px;
+  border-radius:10px;
+}
+
+
+.titleDiv{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.articleTitle{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    max-width: 800px;
+    color:var(--spenceBlue);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-underline-offset: 0.5em;
+    text-decoration: underline;
+    border:5px;
+    
+}
+
+button{
+  cursor:pointer;
+  font-size: 25px;
+  border-radius: 60px;
+  background-color:var(--deepGold);  
+}
+
+.articleTextContent{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.articleImg{
+    display: block;
+    width: 100%;
+    border-radius: 12px;    
+    height: auto;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.articleAuthor{
+  font-size:18px;
+  float:right;
+  padding:20px;
+}
+
