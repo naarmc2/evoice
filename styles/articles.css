@@ -26,6 +26,7 @@
     color:var(--spenceBlue);
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-underline-offset: 0.5em;
+    line-height: 1.5em;
     text-decoration: underline;
     border:5px;
     
@@ -49,6 +50,7 @@ button{
 
 .articleImg{
     display: block;
+    backface-visibility: hidden; /* Hide the back side initially */
     width: 100%;
     border-radius: 12px;    
     height: auto;
@@ -63,3 +65,157 @@ button{
   padding:20px;
 }
 
+
+/*slider*/
+
+.slider{
+  width: 800px;
+  height:500px;
+  border-radius:10px;
+  overflow: hidden;
+}
+
+.slides{
+  width:500%;
+  height:500px;
+  display:flex
+}
+
+.slides input{
+  display:none;
+
+}
+
+.slide{
+  width:20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 100%;
+  height:400px;  
+}
+
+/*manual navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width:800px;
+  margin-top:-40px;
+  display:flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid var(--deepGold);
+  padding:5px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: var(--deepBlue);
+  color: var(--spenceBlue);
+}
+
+.manual-btn.active{
+  background-color: var(--deepGold);
+  color: var(--spenceBlue);
+}
+
+#radi01:checked ~ .first{
+  margin-left:0;
+}
+
+#radi02:checked ~ .first{
+  margin-left:-20%;
+}
+
+#radi03:checked ~ .first{
+  margin-left:-40%;
+}
+
+.navigation-auto{
+  position: absolute;
+  display:flex;
+  width:800px;
+  justify-content: center;
+  margin-top: 450px;
+}
+
+.navigation-auto div{
+  border: 2px solid var(--deepGold);
+  padding:5px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#raid01:checked ~ .navigation-auto .auto-btn1{
+  background-color: var(--deepGold);
+}
+
+#raid02:checked ~ .navigation-auto .auto-btn2{
+  background-color: var(--deepGold);
+}
+
+#raidio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: var(--deepGold);
+}
+
+
+.card {
+  width: auto; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  perspective: 1000px; /* Adjust for 3D effect */
+  margin-left:170px;
+}
+
+.back {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back side initially */
+  border: 1px solid #ccc; 
+}
+
+
+.front {
+  transform: rotateY(0deg);
+  position: absolute;
+ 
+  transition:1s;
+  transition: transform 1s;
+}
+
+.back {
+  transform: rotateY(180deg); 
+  transition: transform 1s;
+  transition:1s;
+
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 4;
+}

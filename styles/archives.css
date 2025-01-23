@@ -41,6 +41,14 @@ issue when browser is expanded smaller
   min-height: 500px;
 }
 
+.section .articleContainer hr{
+  color: #fff;
+}
+
+.section .articleContainer a{
+  color:var(--deepGold);
+
+}
 .section .titleYear{
   width:100%;
   display:flex;
@@ -82,7 +90,7 @@ issue when browser is expanded smaller
   display:none;
 }
 
-.text{
+.articleContainer .text{
   padding:10px;
   text-align: center;
   color: var(--spenceGold);
