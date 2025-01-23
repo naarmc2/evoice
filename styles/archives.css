@@ -6,6 +6,7 @@ html{
 issue when browser is expanded smaller
 */
 .gallery{
+  background-color:whitesmoke;
   border: solid;
   border-radius: 10px; 
   align-self: center;
@@ -13,10 +14,11 @@ issue when browser is expanded smaller
   margin-bottom:50px;
   display: flex;
   overflow-x: hidden;
+  
 }
 
 .section{
-  border:solid;
+  /*border:solid;*/
   border-radius: 10px;
   display: flex;
   flex-direction: row;
