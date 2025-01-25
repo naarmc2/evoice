@@ -48,6 +48,12 @@ button{
     text-align: justify;
 }
 
+.articleTextContent a{
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+}
+
 .articleImg{
     display: block;
     backface-visibility: hidden; /* Hide the back side initially */
