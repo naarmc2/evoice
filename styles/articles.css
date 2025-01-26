@@ -63,11 +63,12 @@
     display: block;
     image-rendering:optimizeQuality;
     backface-visibility: hidden; /* Hide the back side initially */
-    width: 100%;
+    width: auto;
     border-radius: 12px;    
     height: auto;
     margin: 0 auto;
     max-width: 800px;
+    max-height: 500px;
 }
 
 
