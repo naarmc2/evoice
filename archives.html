@@ -200,7 +200,7 @@
             <div class="text">
               <h3>Arden's Adventures: Winter Beverage Delights</h3>
               <h4> By Arden Duca '27</h4>
-              <p> Yummy drinks on a cold winter day </p>
+              <p> Yummy cold drinks on an even colder winter day </p>
             </div>
           </a>
         </div>
@@ -422,30 +422,8 @@
     </div>
   </footer>
 
-<script>
-    let  scrollContainer = document.querySelector(".gallery")
-    let backBtn = document.getElementById("backBtn")
-    let nextBtn = document.getElementById("nextBtn")
-    
-    
-    nextBtn.addEventListener("click", ()=> {
-      scrollContainer.scrollLeft += 1500; 
-    });
-    
-    backBtn.addEventListener("click", ()=> {
-      scrollContainer.scrollLeft -= 1500; 
-    });
-
-
-  const submitImg = document.getElementById("submitBtn");
-  submitImg.addEventListener("mouseover", function() {
-    submitImg.src = "images/submit4.png"; // Change image source on hover
-  });
-  submitImg.addEventListener("mouseout", function() {
-    submitImg.src = "images/submit3.png"; // Restore original image on mouseout
-  });
-
-</script>
+  <script src="js/archives.js"></script>
 </body>
+
 
 </html>

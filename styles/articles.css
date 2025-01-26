@@ -1,3 +1,7 @@
+.html{
+  scroll-behavior:auto;
+}
+
 .articleContent{
   width:80%;
   margin: 0 auto;
@@ -32,7 +36,7 @@
     
 }
 
-button{
+.articleContent button{
   cursor:pointer;
   font-size: 25px;
   padding:10px;
@@ -226,4 +230,20 @@ button{
   margin: 0;
   text-align: center;
   line-height: 4;
+}
+
+
+
+.scrollToTopBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--deepGold);
+  color: var(--deepBlue);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.3s;
 }
