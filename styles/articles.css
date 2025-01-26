@@ -235,9 +235,9 @@
 
 
 .scrollToTopBtn{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  position: relative;
+  top: 20px;
+  left: 1200px;
   background-color: var(--deepGold);
   color: var(--deepBlue);
   border: none;
