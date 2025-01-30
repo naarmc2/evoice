@@ -1,22 +1,36 @@
-.firstBar {
-  border:solid;
-  padding: 50px;
-  border-radius: 10px;
-  
+.hero{
+  background-image: url("heroImg.jpg");
+  border: solid;
 }
-
-.firstBar .periodical{
-  width: 50%;
-  padding: 10px;
-  border:solid;
-
-  height:300px; 
-}
-.firstBar .left {
+.heroText{
   float: left;
 }
 
-.firstBar .right {
-  float: right;
+.articleScrollBar {
+  display:flex;
+  flex-direction: row;
+  width: 90vw;
+  overflow-x: scroll;
+  height: auto;
 
+}
+
+.articleScrollBar button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: var(--deepGold);
+  border-radius: 100px;
+  padding:10px;
+  margin: 10px;
+  width: auto;
+  height: 40px;
+}
+.articleScrollBar img{
+  max-height: 300px;
+  max-width: 300px;
+  padding:5px;
+  
 }
