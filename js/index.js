@@ -26,3 +26,19 @@ backButton.addEventListener('click', () => {
 
   imageWrapper.style.transform = `translateX(-${currentPosition}px)`;
 });
+
+
+
+
+
+const targetElement = document.getElementById('#main');
+
+const scrollToElement = () => {
+    targetElement.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+// Example usage (e.g., in a button's onclick event):
+const targetButton = document.getElementsByClassName('heroButton');
+targetButton.addEventListener('click', scrollToElement);

@@ -1,3 +1,8 @@
+.body{
+  scroll-behavior:smooth;
+
+}
+
 .layeredContainer{
   display: flex;
   flex-direction: column;
@@ -25,9 +30,10 @@
   background-color: var(--deepBlue);
   font-size:15px;
   color: #fff;
-  padding:10px;
-  width:120px;
-  border-radius:20px
+  padding:12px;
+  height:50px;
+  min-width:110px;
+  border-radius:30px
 }
 
 .articleScrollBar{
@@ -50,8 +56,9 @@
   text-align: left;
   margin-left: 80px;
   font-size: 20px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   justify-self: baseline;
+  margin-right: 1010px;
 }
 
 .articleScrollBarImgs {
@@ -76,11 +83,14 @@
   width: 200px;
   padding-inline:10px;
   border-radius:12px;
+  
 }
 
 .articleScrollBarImgs p{
-  text-overflow:clip;
-  top:0;
+  width:200px;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space: nowrap;
   text-align: center;
 }
 
@@ -94,8 +104,9 @@
   margin: 10px;
   cursor: pointer;
   width: auto;
-  height: 40px;
+  height: 50px;
   z-index: 1;
+  border-color: #fff;
 }
   
 .articleDisplaySection{
