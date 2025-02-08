@@ -1,28 +1,28 @@
-const imageContainer = document.querySelector('.articleScrollBarImg');
+const imageContainer = document.querySelector('.articleScrollBarImgs');
 const imageWrapper = document.querySelector('.image-wrapper');
-const scrollButton = document.querySelector('.scrollButton');
+const backButton = document.querySelector('.backButton');
+const forwardButton = document.querySelector('.forwardButton');
 
 let currentPosition = 0;
-const imageCount = imageWrapper.querySelectorAll('div').length;
-const imageHeight = imageWrapper.querySelector('div').offsetHeight; // Height of one image
+const imageCount = imageWrapper.querySelectorAll('img').length;
+const imageWidth = imageWrapper.querySelector('img').offsetWidth;
 
-scrollButton.addEventListener('click', () => {
-  currentPosition += imageHeight; // Scroll by one image height
+forwardButton.addEventListener('click', () => {
+  currentPosition += imageWidth;
 
-  if (currentPosition > (imageCount -1 ) * imageHeight) {
-    currentPosition = 0; // Reset to the top if at the end
+  if (currentPosition > (imageCount - 1) * imageWidth) {
+    currentPosition = (imageCount - 1) * imageWidth; // Don't scroll past the end
   }
 
-  imageWrapper.style.transform = `translateY(-${currentPosition}px)`;
+  imageWrapper.style.transform = `translateX(-${currentPosition}px)`;
 });
 
-// Optional: Hide the scroll button initially if you want it to appear only on hover
-imageContainer.addEventListener('mouseenter', () => {
-    scrollButton.style.display = 'block'; // Or however you want it to appear
-});
+backButton.addEventListener('click', () => {
+  currentPosition -= imageWidth;
 
-imageContainer.addEventListener('mouseleave', () => {
-    scrollButton.style.display = 'none'; // Or however you want it to disappear
-});
+  if (currentPosition < 0) {
+    currentPosition = 0; // Don't scroll before the beginning
+  }
 
-scrollButton.style.display = 'none'; // Hide initially
+  imageWrapper.style.transform = `translateX(-${currentPosition}px)`;
+});

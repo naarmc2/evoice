@@ -44,6 +44,7 @@
 .articleScrollBarImgs {
   display:flex;
   flex-direction:row;
+  
   width: 92vw;
   gap:5px;
 }
@@ -53,6 +54,7 @@
   display:flex;
   flex-direction:row;
   overflow:hidden;
+  position: relative;
 }
 .image-wrapper img{
   width: 100%; 
@@ -66,6 +68,7 @@
 .articleScrollBarImgs p{
   text-overflow:clip;
   top:0;
+  text-align: center;
 }
 
 .articleScrollBarImgs .scrollButton{
@@ -79,6 +82,7 @@
   cursor: pointer;
   width: auto;
   height: 40px;
+  z-index: 1;
 }
   
 .articleDisplaySection{
