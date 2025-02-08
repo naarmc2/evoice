@@ -10,15 +10,14 @@
 .hero{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
   height: 100vh;
   width: 100vw;
 }
 .heroText{
   float: left;
-  right:200px;
-  left:0
+  text-align:left;
+  left:100px;
 
 }
 
@@ -31,6 +30,7 @@
     text-align:left;
     border-radius:10px;
     opacity: 0.93;
+    position: relative;
     z-index: 1;
 
 }
@@ -47,7 +47,6 @@
   flex-direction: row;
   width: 90vw;
   overflow-x: scroll;
-
   gap:4px;
  
   
@@ -72,6 +71,10 @@
   width: 200px;
   padding:8px;
   border-radius:12px;
+}
 
-  
+.articleDisplaySection{
+  height:100vh;
+  width:100vw;
+  background-color:orange;
 }
