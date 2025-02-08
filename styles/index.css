@@ -1,9 +1,9 @@
 .body{
   scroll-behavior:smooth;
-
 }
 
 .layeredContainer{
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +37,7 @@
 }
 
 .articleScrollBar{
+  transform:translateY(50%);
     display:flex;
     flex-direction: column;
     background-color:var(--deepBlue);
@@ -107,10 +108,11 @@
   height: 50px;
   z-index: 1;
   border-color: #fff;
+  transform:translateY(-70%)
 }
   
 .articleDisplaySection{
-  height:100vh;
+  height:fit-content;
   width:100vw;
-  background-color:orange;
+  position: relative;
 }

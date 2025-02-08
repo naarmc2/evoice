@@ -7,7 +7,8 @@
   --lightGold: #d2b37c;
   --deepBlue: #192533;
   --deepGold: #fcc52e;
-  --brown: #342217;
+  --backGround: #faf9f9;
+
 }
 
 * {
@@ -23,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 50vh;
-  background-color: #faf9f9;
+  background-color:var(--backGround);
   display: flex;
   align-items: center;
   justify-content: flex-end;
