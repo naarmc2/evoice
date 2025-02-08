@@ -33,12 +33,19 @@
 
 }
 
+.articleScrollBarText{
+  color: var(--deepGold);
+  margin-left: 80px;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  
+}
+
 .articleScrollBarImgs {
   display:flex;
   flex-direction:row;
-  width: 90vw;
-  gap:4px;
-
+  width: 92vw;
+  gap:5px;
 }
 
 .image-wrapper {
@@ -50,22 +57,18 @@
 .image-wrapper img{
   width: 100%; 
   cursor: pointer;
-}
-
-
-.articleScrollBarText{
-  color: var(--deepGold);
-  margin-left: 80px;
-  font-size: 20px;
-  letter-spacing: 0.3em;
-  
+  height: 200px;
+  width: 200px;
+  padding-inline:10px;
+  border-radius:12px;
 }
 
 .articleScrollBarImgs p{
   text-overflow:clip;
   top:0;
 }
-.articleScrollBar .scrollButton{
+
+.articleScrollBarImgs .scrollButton{
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -77,14 +80,7 @@
   width: auto;
   height: 40px;
 }
-
-.articleScrollBar img{
-  height: 200px;
-  width: 200px;
-  padding:8px;
-  border-radius:12px;
-}
-
+  
 .articleDisplaySection{
   height:100vh;
   width:100vw;
