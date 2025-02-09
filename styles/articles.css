@@ -4,6 +4,7 @@
 
 .articleContent{
   background-color: var(--backGround);
+  background-size: cover;
   width:80%;
   margin: 0 auto;
   margin-bottom: 50px;
