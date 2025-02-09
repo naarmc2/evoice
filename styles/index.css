@@ -11,7 +11,8 @@
   height: 85vh;
   width: 100vw;
   background-image: url('https://i.pinimg.com/736x/74/3f/6b/743f6b19c4cb5ca4cadcc300e1d1d08a.jpg');
-  background-size:contain;
+  background-position: center;
+  background-size:cover;
 
 }
 .hero{
