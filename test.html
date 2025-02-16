@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Scrollbar</title>
+<style>
+  #scrollbar-container {
+    width: 200px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    overflow-y: scroll; /* Enables vertical scrolling */
+    border: 1px solid #ccc;
+  }
+
+  #scrollbar-content {
+    display: flex; /* Arranges images horizontally */
+    flex-direction: column; /* Stack images vertically in the scrollbar */
+  }
+
+  #scrollbar-content img {
+    width: 50px;  /* Adjust image width as needed */
+    height: 50px; /* Adjust image height as needed */
+    margin: 5px;
+    cursor: pointer; /* Indicate clickable images */
+  }
+
+  #content-area {
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="scrollbar-container">
+  <div id="scrollbar-content">
+    <img src="image1.jpg" alt="Image 1" data-content="Content for Image 1">
+    <img src="image2.jpg" alt="Image 2" data-content="Content for Image 2">
+    <img src="image3.jpg" alt="Image 3" data-content="Content for Image 3">
+    <img src="image4.jpg" alt="Image 4" data-content="Content for Image 4">
+    <img src="image5.jpg" alt="Image 5" data-content="Content for Image 5">
+
+  </div>
+</div>
+
+<div id="content-area">
+  Select an image from the scrollbar.
+</div>
+
+<script>
+  const images = document.querySelectorAll('#scrollbar-content img');
+  const contentArea = document.getElementById('content-area');
+
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const content = image.dataset.content;  // Retrieve content from data attribute
+      contentArea.innerHTML = content;       // Update the content area
+    });
+  });
+</script>
+
+</body>
+</html>

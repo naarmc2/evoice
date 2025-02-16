@@ -42,6 +42,7 @@
  <div class="hero">
   <div class="heroText">
     <br><br> <br>
+  
     <h1>Welcome to eVoice, <br> Spence's first digital newspaper! &nbsp; <span class="material-symbols-outlined" style="font-size:40px">newsmode</span></h1> 
     <p>We are excited to present you with some articles that our lovely writers have recently written!<br>We also invite all Upper School students to submit their articles/art through the submissions tab!
     </p>
@@ -53,21 +54,22 @@
     <p class="articleScrollBarText">Fresh off the e-press</p>
     <div class="articleScrollBarImgs">
       <button class="slide-button material-symbols-outlined scrollButton backButton"> chevron_left</button>
-      <div class="image-wrapper" >
-        <div><a href=""> <img src="images/communityFridges.png" alt="">  <p>OMMM: <br> NYC's Community Fridges </p> </a></div>
-        <div><a href=""> <img src="images/eWaste.png" alt="">  <p>AA: <br> e-Waste in NYC </p> </a></div>
-        <div><a href=""> <img src="images/musicMagic.jpg" alt="">  <p> The Magic of Music</p> </a></div>
-        <div><a href=""> <img src="images/possessiveSenior.jpg" alt="">  <p>The Possessive "Senior"        </p> </a></div>
-        <div><a href=""> <img src="images/windPower.jpg" alt="">  <p>Wind Power  </p> </a></div>
-        <div><a href=""> <img src="images/outdoorHoliday.png" alt="">  <p> AA: <br>Outdoor Holiday Experiences in NYC </p> </a></div>
-        <div><a href=""> <img src="images/holidayDrives.png" alt="">  <p>OMMM: <br> Holiday Drives</p> </a></div>
-        <div><a href=""> <img src="images/lightPainting1.jpg" alt="">  <p>Light Painting        </p> </a></div>
+      <div class="image-wrapper" id="content">
+        <div> <img src="images/communityFridges.png" alt="" data-content="&lt;div&gt;&lt;h2&gt;Heading 1&lt;/h2&gt;&lt;p&gt;Paragraph 1. This is some &lt;strong&gt;bold&lt;/strong&gt; text.&lt;/p&gt;&lt;/div&gt;">  <p>OMMM: <br> NYC's Community Fridges </p></div>
+        <div><img src="images/eWaste.png" alt=""data-content='<div><h2>Heading 1</h2><p>Paragraph 1. This is some <strong>bold</strong> text.</p></div>'> </div>
+        <div><a href="#"> <img src="images/musicMagic.jpg" alt="">  <p> The Magic of Music</p> </a></div>
+        <div><a href="#"> <img src="images/possessiveSenior.jpg" alt="">  <p>The Possessive "Senior"        </p> </a></div>
+        <div><a href="#"> <img src="images/windPower.jpg" alt="">  <p>Wind Power  </p> </a></div>
+        <div><a href="#"> <img src="images/outdoorHoliday.png" alt="">  <p> AA: <br>Outdoor Holiday Experiences in NYC </p> </a></div>
+        <div><a href="#"> <img src="images/holidayDrives.png" alt="">  <p>OMMM: <br> Holiday Drives</p> </a></div>
+        <div><a href="#"> <img src="images/lightPainting1.jpg" alt="">  <p>Light Painting        </p> </a></div>
       </div>
       <button class="slide-button material-symbols-outlined scrollButton forwardButton"> chevron_right</button>
     </div>
   </div>
 </div>
   <div class="articleDisplaySection">
+    
   <main>
     <br><br><br><br><br><br><br><br><br>
     <hr>
@@ -77,6 +79,12 @@
         </h2>
       </div>
 
+      <div id="content-area">
+        <p>  Select an image from the scrollbar.
+        </p>
+      </div>
+      
+      
       <img  class="articleImg" src="images/communityFridges.png" alt="community Fridges">
       <hr>
       <p class="articleTextContent" >

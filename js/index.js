@@ -40,5 +40,19 @@ const scrollToElement = () => {
 }
 
 // Example usage (e.g., in a button's onclick event):
-const targetButton = document.getElementsByClassName('heroButton');
+const targetButton = document.get('heroButton');
 targetButton.addEventListener('click', scrollToElement);
+
+
+
+//FOR SCROLLBAR CONTENT LOADING
+
+const images = document.querySelectorAll('#content div img');
+const contentArea = document.getElementById('content-area');
+
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    const content = image.dataset.content;
+    contentArea.innerHTML = content; // This will now correctly parse HTML
+  });
+});
