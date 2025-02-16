@@ -31,7 +31,7 @@ backButton.addEventListener('click', () => {
 
 
 
-const targetElement = document.getElementById('#main');
+const targetElement = document.getElementById('main');
 
 const scrollToElement = () => {
     targetElement.scrollIntoView({
@@ -40,7 +40,7 @@ const scrollToElement = () => {
 }
 
 // Example usage (e.g., in a button's onclick event):
-const targetButton = document.get('heroButton');
+const targetButton = document.querySelector('.heroButton ');
 targetButton.addEventListener('click', scrollToElement);
 
 
