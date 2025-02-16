@@ -65,6 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   images.forEach(image => {
       image.addEventListener('click', () => {
+          contentArea.innerHTML = '<p>Loading article...</p>'; // Show loading message
+
           const articleId = image.dataset.articleId; // Get the ID of the article
           fetch(`articles/${articleId}.html`) // Fetch the correct HTML file
               .then(response => {
