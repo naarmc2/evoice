@@ -1,63 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Image Scrollbar</title>
-<style>
-  #scrollbar-container {
-    width: 200px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    overflow-y: scroll; /* Enables vertical scrolling */
-    border: 1px solid #ccc;
-  }
+    <title>eVoice</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="article.css">
 
-  #scrollbar-content {
-    display: flex; /* Arranges images horizontally */
-    flex-direction: column; /* Stack images vertically in the scrollbar */
-  }
 
-  #scrollbar-content img {
-    width: 50px;  /* Adjust image width as needed */
-    height: 50px; /* Adjust image height as needed */
-    margin: 5px;
-    cursor: pointer; /* Indicate clickable images */
-  }
-
-  #content-area {
-    width: 300px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-</style>
 </head>
 <body>
+    <div class="layeredContainer">
+        <div class="hero">
+            </div>
 
-<div id="scrollbar-container">
-  <div id="scrollbar-content">
-    <img src="image1.jpg" alt="Image 1" data-content="Content for Image 1">
-    <img src="image2.jpg" alt="Image 2" data-content="Content for Image 2">
-    <img src="image3.jpg" alt="Image 3" data-content="Content for Image 3">
-    <img src="image4.jpg" alt="Image 4" data-content="Content for Image 4">
-    <img src="image5.jpg" alt="Image 5" data-content="Content for Image 5">
+        <div id="main" class="articleScrollBar">
+            <p class="articleScrollBarText">Fresh off the e-press</p>
+            <div class="articleScrollBarImgs">
+                <button class="slide-button material-symbols-outlined scrollButton backButton"> chevron_left</button>
+                <div class="image-wrapper" id="content">
+                    <div>
+                        <img src="images/communityFridges.png" alt="" data-content='<div><h2>Out of Milla\'s Morning Mind: NYC\'s Community Fridges</h2><p>Community refrigerators have been popping up around NYC... (rest of your content)</p><p class="articleAuthor"> - Milla Duca \'25</p></div>'>
+                        <p>OMMM: <br> NYC's Community Fridges </p>
+                    </div>
+                    <div>
+                        <img src="images/eWaste.png" alt="" data-content='<div><h2>AA: e-Waste in NYC</h2><p>Content for e-waste article...</p></div>'>
+                        <p>AA: <br> e-Waste in NYC </p>
+                    </div>
+                     </div>
+                <button class="slide-button material-symbols-outlined scrollButton forwardButton"> chevron_right</button>
+            </div>
+        </div>
+    </div>
 
-  </div>
-</div>
+    <div class="articleDisplaySection">
+        <main>
+            <div id="content-area">
+                <p>Select an image from the scrollbar.</p>
+            </div>
+        </main>
+    </div>
 
-<div id="content-area">
-  Select an image from the scrollbar.
-</div>
+    <script src="js/general.js"></script>
+    <script src="js/articles.js"></script>
+    <script src="js/index.js"></script>
 
-<script>
-  const images = document.querySelectorAll('#scrollbar-content img');
-  const contentArea = document.getElementById('content-area');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('#content img');
+            const contentArea = document.getElementById('content-area');
 
-  images.forEach(image => {
-    image.addEventListener('click', () => {
-      const content = image.dataset.content;  // Retrieve content from data attribute
-      contentArea.innerHTML = content;       // Update the content area
-    });
-  });
-</script>
+            images.forEach(image => {
+                image.addEventListener('click', () => {
+                    const content = image.dataset.content;
+                    contentArea.innerHTML = content;
 
+                    // Add this to update the article title and content below the scrollbar
+                    const articleContentDiv = document.querySelector('.articleContent');
+                    if (articleContentDiv) {
+                        articleContentDiv.innerHTML = content;  // Update with the clicked content
+                    }
+
+                    //Optional: Scroll to the article content area after image click
+                    contentArea.scrollIntoView({behavior: "smooth"});
+
+                });
+            });
+
+
+        });
+
+        // ... (your other scripts) ...
+
+    </script>
 </body>
 </html>
