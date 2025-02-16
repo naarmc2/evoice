@@ -27,7 +27,7 @@ backButton.addEventListener('click', () => {
   imageWrapper.style.transform = `translateX(-${currentPosition}px)`;
 });
 
-
+const scrollToTopBtn = document.querySelector('.scrollToTopBtn')
 
 window.addEventListener("scroll", () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -59,12 +59,27 @@ targetButton.addEventListener('click', scrollToElement);
 
 //FOR SCROLLBAR CONTENT LOADING
 
-const images = document.querySelectorAll('#content div img');
-const contentArea = document.getElementById('content-area');
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('#content img');
+  const contentArea = document.getElementById('content-area');
 
-images.forEach(image => {
-  image.addEventListener('click', () => {
-    const content = image.dataset.content;
-    contentArea.innerHTML = content; // This will now correctly parse HTML
+  images.forEach(image => {
+      image.addEventListener('click', () => {
+          const articleId = image.dataset.articleId; // Get the ID of the article
+          fetch(`articles/${articleId}.html`) // Fetch the correct HTML file
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error(`HTTP error! status: ${response.status}`); // Error check
+                  }
+                  return response.text(); // Get the HTML as text
+              })
+              .then(html => {
+                  contentArea.innerHTML = html; // Insert the HTML into the content area
+              })
+              .catch(error => {
+                  console.error('Error fetching article:', error);
+                  contentArea.innerHTML = '<p>Error loading article.</p>'; // Display an error message
+              });
+      });
   });
 });
