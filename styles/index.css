@@ -68,7 +68,6 @@
   margin-left: 70px;
   font-size: 20px;
   letter-spacing: 0.2em;
-  justify-self: baseline;
   margin-right:71%;
 
 }
@@ -79,9 +78,9 @@
   flex-direction:row;
   position:relative;
   width: 92vw;
-  overflow: scroll;
   gap:5px;
   align-items: center;
+  overflow:hidden;
 
 }
 
@@ -93,19 +92,20 @@
   background-color: var(--deepGold);
   border-radius: 100px;
   padding:10px;
-  margin: 10px;
   cursor: pointer;
-  width: auto;
   height: 50px;
+  position:absolute;
   border-color: #fff;
-  z-index:2
+  
+  
+  z-index:2;
 
 }
 
 .articleScrollBar p{
   width:200px;
   text-overflow: ellipsis;
-  overflow:hidden;
+  overflow-y:hidden;
   white-space: nowrap;
   text-align: center;
   color: var(--spenceBlue)
@@ -120,7 +120,7 @@
   overflow:scroll;
   white-space: nowrap;
   position: relative;
-  width:fit-content;
+  min-width:300px;
 }
 .image-wrapper img{
   cursor: pointer;
