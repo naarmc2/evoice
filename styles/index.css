@@ -44,11 +44,12 @@
 
 /*START OF SCROLLBAR CSS CODE*/
 .articleBar{
-    margin-top:20vh;
+    transform:translateY(20%); /* margin-top:20vh; is better to use but cause text to exit height of container*/
     display:flex;
     flex-direction: column;
     background-color:var(--deepBlue);
     height: 400px;
+    
     width:95vw;
     justify-content: center;
     align-items: center;
@@ -76,7 +77,7 @@
   flex-direction:row;
   position:relative;
   width: 92vw;
-  overflow: hidden;
+  overflow: scroll;
   gap:5px;
   align-items: center;
 
@@ -94,11 +95,14 @@
   cursor: pointer;
   width: auto;
   height: 50px;
-  z-index: 1;
   border-color: #fff;
-  margin-bottom:10vh;
+  position:absolute;
+  left:80%;
+
 
 }
+
+
 .articleScrollBar p{
   width:200px;
   text-overflow: ellipsis;
@@ -117,6 +121,7 @@
   overflow:scroll;
   white-space: nowrap;
   position: relative;
+  width:fit-content;
 }
 .image-wrapper img{
   cursor: pointer;
