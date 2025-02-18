@@ -22,6 +22,7 @@
   height: 100vh;
   width: 100vw;
   padding:30px;
+
 }
 .heroText{
   float: left;
@@ -40,8 +41,10 @@
   border-radius:30px
 }
 
-.articleScrollBar{
-  transform:translateY(20%);
+
+/*START OF SCROLLBAR CSS CODE*/
+.articleBar{
+    margin-top:20vh;
     display:flex;
     flex-direction: column;
     background-color:var(--deepBlue);
@@ -50,57 +53,36 @@
     justify-content: center;
     align-items: center;
     border-radius:10px;
-    opacity: 0.93;
+    opacity: 0.90;
     position: relative;
     z-index: 1;
 
 }
 
-.articleScrollBarText{
+.articleBarText{
   color: var(--deepGold);
   text-align: left;
-  margin-left: 80px;
+  margin-left: 70px;
   font-size: 20px;
   letter-spacing: 0.2em;
   justify-self: baseline;
-  margin-right: 1010px;
+  margin-right:71%;
+
 }
 
-.articleScrollBarImgs {
+
+.articleScrollBar {
   display:flex;
   flex-direction:row;
-  
+  position:relative;
   width: 92vw;
+  overflow: hidden;
   gap:5px;
+  align-items: center;
 }
 
-.image-wrapper {
-  transition: transform 0.5s ease; 
-  display:flex;
-  flex-direction:row;
-  overflow:hidden;
-  position: relative;
-}
-.image-wrapper img{
-  width: 100%; 
-  cursor: pointer;
-  height: 200px;
-  width: 200px;
-  padding-inline:10px;
-  border-radius:12px;
-  
-}
 
-.articleScrollBarImgs p{
-  width:200px;
-  text-overflow: ellipsis;
-  overflow:hidden;
-  white-space: nowrap;
-  text-align: center;
-  color: var(--spenceBlue)
-}
-
-.articleScrollBarImgs .scrollButton{
+.articleScrollBar .scrollButton{
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -113,11 +95,50 @@
   height: 50px;
   z-index: 1;
   border-color: #fff;
-  transform:translateY(-70%)
+  margin-bottom:10vh;
+
 }
+.articleScrollBar p{
+  width:200px;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space: nowrap;
+  text-align: center;
+  color: var(--spenceBlue)
+}
+
+
   
+.image-wrapper {
+  transition: transform 0.5s ease; 
+  display:flex;
+  flex-direction:row;
+  overflow:hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.image-wrapper img{
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  padding-inline:10px;
+  border-radius:12px;
+  object-fit: cover;
+  
+}
+
 .articleDisplaySection{
   height:fit-content;
   width:100vw;
   position: relative;
+}
+
+
+#content-area h3{
+  font-family: 'Handlee';
+  color:gray;
+  text-align: center;
+  opacity: 0.6;
+
+  
 }

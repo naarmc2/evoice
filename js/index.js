@@ -27,6 +27,8 @@ backButton.addEventListener('click', () => {
   imageWrapper.style.transform = `translateX(-${currentPosition}px)`;
 });
 
+
+//brings the user back to the top of the screen
 const scrollToTopBtn = document.querySelector('.scrollToTopBtn')
 
 window.addEventListener("scroll", () => {
