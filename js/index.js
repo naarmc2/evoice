@@ -1,32 +1,36 @@
-const imageContainer = document.querySelector('.articleScrollBarImgs');
-const imageWrapper = document.querySelector('.image-wrapper');
-const backButton = document.querySelector('.backButton');
-const forwardButton = document.querySelector('.forwardButton');
+const imageWrapper = document.getElementById('content');
+const scrollLeftButton = document.getElementById('scrollLeft');
+const scrollRightButton = document.getElementById('scrollRight');
+const imageSlider = document.getElementById('imageSlider');
 
-let currentPosition = 0;
-const imageCount = imageWrapper.querySelectorAll('img').length;
-const imageWidth = imageWrapper.querySelector('img').offsetWidth;
+const scrollAmount = imageWrapper.querySelector('div').offsetWidth + 150; // Adjust based on your image widths + padding
 
-forwardButton.addEventListener('click', () => {
-  currentPosition += imageWidth;
-
-  if (currentPosition > (imageCount - 1) * imageWidth) {
-    currentPosition = (imageCount - 1) * imageWidth; // Don't scroll past the end
-  }
-
-  imageWrapper.style.transform = `translateX(-${currentPosition}px)`;
+scrollLeftButton.addEventListener('click', () => {
+    imageWrapper.scrollLeft -= scrollAmount;
+    updateSlider();
 });
 
-backButton.addEventListener('click', () => {
-  currentPosition -= imageWidth;
-
-  if (currentPosition < 0) {
-    currentPosition = 0; // Don't scroll before the beginning
-  }
-
-  imageWrapper.style.transform = `translateX(-${currentPosition}px)`;
+scrollRightButton.addEventListener('click', () => {
+    imageWrapper.scrollLeft += scrollAmount;
+    updateSlider();
 });
 
+imageWrapper.addEventListener('scroll', () => {
+    updateSlider();
+});
+
+imageSlider.addEventListener('input', () => {
+    const maxScroll = imageWrapper.scrollWidth - imageWrapper.clientWidth;
+    const scrollPercent = imageSlider.value / 100;
+    imageWrapper.scrollLeft = maxScroll * scrollPercent;
+});
+
+function updateSlider() {
+    const maxScroll = imageWrapper.scrollWidth - imageWrapper.clientWidth;
+    const currentScroll = imageWrapper.scrollLeft;
+    const scrollPercent = (currentScroll / maxScroll) * 100;
+    imageSlider.value = scrollPercent;
+}
 
 //brings the user back to the top of the screen
 const scrollToTopBtn = document.querySelector('.scrollToTopBtn')

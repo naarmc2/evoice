@@ -72,19 +72,16 @@
 
 }
 
-
 .articleScrollBar {
   display:flex;
   flex-direction:row;
-  position:relative;
   width: 92vw;
   gap:5px;
   align-items: center;
   overflow:hidden;
+  justify-content: center; 
 
 }
-
-
 
 .articleScrollBar .scrollButton{
   justify-content: center;
@@ -92,15 +89,24 @@
   align-self: center;
   background-color: var(--deepGold);
   border-radius: 100px;
-  padding:10px;
   cursor: pointer;
   height: 50px;
+  width:50px;
+  font-size: 18px;
   position:absolute;
   border-color: #fff;
-  
-  
   z-index:2;
+  
+  
 
+}
+
+.articleScrollBar .left {
+  left: -30px;
+}
+
+.articleScrollBar .right {
+  right: 0;
 }
 
 .articleScrollBar p{
@@ -113,16 +119,22 @@
 }
 
 
-  
 .image-wrapper {
-  transition: transform 0.5s ease; 
-  display:flex;
-  flex-direction:row;
-  overflow:scroll;
+  transition: transform 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; /* Allow horizontal scrolling */
   white-space: nowrap;
   position: relative;
-  min-width:300px;
+  min-width: 300px;
+  scroll-behavior: smooth; /* smooth scroll */
 }
+
+.image-wrapper::-webkit-scrollbar { /* Hide scrollbar */
+  display: none;
+}
+
+
 .image-wrapper img{
   cursor: pointer;
   height: 200px;
