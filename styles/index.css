@@ -65,10 +65,10 @@
 .articleBarText{
   color: var(--deepGold);
   text-align: left;
-  margin-left: 70px;
+  margin-left: 0;
   font-size: 20px;
   letter-spacing: 0.2em;
-  margin-right:71%;
+  margin-right:76%;
 
 }
 
@@ -83,6 +83,7 @@
   overflow:hidden;
 
 }
+
 
 
 .articleScrollBar .scrollButton{
@@ -108,7 +109,7 @@
   overflow-y:hidden;
   white-space: nowrap;
   text-align: center;
-  color: var(--spenceBlue)
+  color: var(--spenceGold);
 }
 
 
