@@ -96,13 +96,12 @@
   position:absolute;
   border-color: #fff;
   z-index:2;
-  
-  
+  transform: translateY(-60%);
 
 }
 
 .articleScrollBar .left {
-  left: -30px;
+  left: 0;
 }
 
 .articleScrollBar .right {
