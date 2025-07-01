@@ -121,7 +121,7 @@
 .image-wrapper {
   transition: transform 0.5s ease;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   overflow-x: auto; /* Allow horizontal scrolling */
   white-space: nowrap;
   position: relative;
